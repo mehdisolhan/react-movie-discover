@@ -18,8 +18,11 @@ class App extends Component{
     e.preventDefault();
     const movieGet = document.getElementById('movieInput').value;
     if(movieGet !== ''){
-        fetch(`http://www.omdbapi.com/?apikey=2f4aee20&t=${movieGet}`)
-        .then(result => result.json())
+        fetch(`https://www.omdbapi.com/?apikey=2f4aee20&t=${movieGet}`, {
+          headers: {
+            "Content-Type": "text/plain"
+        },
+        }).then(result => result.json())
         .then(result => {
           this.setState({
             isLoaded:true,
@@ -47,7 +50,7 @@ class App extends Component{
             </div>}
             <div className="badgeContainer">
                <span className="badgeGit">MEHDİ SOLHAN, {( new Date().getFullYear())}</span>
-               <a href="https://github.com/mehdisolhan/movie-discover" rel="noopener noreferrer" target="_blank"> <img src={imagePath} alt="source code"></img></a>
+               <a href="https://github.com/mehdisolhan/react-movie-discover" rel="noopener noreferrer" target="_blank"> <img src={imagePath} alt="source code"></img></a>
             </div>
           </div>
         );
