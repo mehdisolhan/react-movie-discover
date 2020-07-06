@@ -1,0 +1,37 @@
+.card-movie-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 29px;
+    letter-spacing: 3px;
+}
+.card{
+    background: none;
+    /* border-top: none; */
+    border: 1px solid rgba(247, 245, 245, 0.27);
+}
+.card-title{
+    border: none;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0;
+}
+.card-stars{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.card-rate{
+    padding-top: 0.1rem;
+}
+#posterImg{
+    width: auto;
+}
+.notFound{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+hr {
+    border-top: 1px solid rgba(247, 245, 245, 0.27);;
+}
